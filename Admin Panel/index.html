@@ -1,0 +1,2927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <!-- css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bs css cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- bs js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <!-- icon bs cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- remix icon cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <div class="main">
+      <div class="left">
+        <div class="nav">
+          <div class="container">
+            <div class="row">
+              <span class="logo3">Able <sup class="pose2">pro</sup> <sup
+                  class="pose badge rounded-pill bg-light text-secondary  ">v9.0</sup></span>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="container  mt-2 ">
+            <div class="row">
+              <div class="flex4 d-flex  " style="width: 90%; margin: auto;  background-color: #f3f5f7; height: 80px;">
+                <div class="profile col-lg-2" style="margin: 18px 15px 15px 14px;">
+                  <img src="images/avatar-1.jpg" alt="" width="43px" height="43px" class="profile1">
+                </div>
+                <div class="details1 col-lg-5">
+                  <h3>Jonh Smith</h3>
+                  <p>Administrator</p>
+                </div>
+                <div class="counter col-lg-5">
+                  <div class="cross"><i class="ri-filter-3-line foul"></i></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="flex5" style="width: 90%; margin: auto;  background-color: #f3f5f7; ">
+            <ul class="back">
+              <li><a href="#" class="subback">
+                  <i class="ri-user-line"></i>&nbsp;
+                  <span>My Account</span>
+                </a></li>
+              <li><a href="#" class="subback">
+                  <i class="ri-settings-2-line"></i>&nbsp;
+                  <span>Settings</span>
+                </a></li>
+              <li><a href="#" class="subback">
+                  <i class="ri-lock-2-line"></i>&nbsp;
+                  <span>Lock Screen</span>
+                </a></li>
+              <li><a href="#" class="subback">
+                  <i class="ri-logout-circle-r-line"></i>&nbsp;
+                  <span>Logout</span>
+                </a></li>
+            </ul>
+          </div>
+          <!-- Navigation -->
+          <div class="container">
+            <div class="row">
+              <ul>
+                <li><label class="caption">Navagation</label></li>
+              </ul>
+              <div class="accordion  " id="accordionE">
+                <div class="accordion">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button  rounded-3 box5" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne" style="color: grey;">
+                      <span class="col-lg-2"><i class="ri-line-chart-line"></i></span>
+                      <span class="col-lg-6">Dashboard</span>
+                      <div class="div12">
+                        <span class="badge rounded-circle  bg-primary ">2</span>
+                      </div>
+
+                    </button>
+                  </h2>
+                  <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionE">
+                    <div class="accordion-body">
+                      <ul class="dash">
+                        <li class=""><a href="" class="nav-link">Default</a></li>
+                        <li class=""><a href="" class="nav-link">Analytics</a></li>
+                        <li class=""><a href="" class="nav-link">Finance</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion  mt-2">
+                  <h2 class="accordion-header" id="heading2">
+                    <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseTwo"
+                      style="color: grey;">
+                      <span class="col-lg-2"><i class="bi bi-union" style="color: grey;"></i></span>
+                      <span class="col-lg-6">Layouts</span>
+                    </button>
+                  </h2>
+                  <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                    data-bs-parent="#accordionE">
+                    <div class="accordion-body">
+                      <ul class="dash">
+                        <li class=""><a href="" class="nav-link">Vertical</a></li>
+                        <li class=""><a href="" class="nav-link">Horizontal</a></li>
+                        <li class=""><a href="" class="nav-link">Layouts 2</a></li>
+                        <li class=""><a href="" class="nav-link">Compact</a></li>
+                        <li class=""><a href="" class="nav-link">Tab</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- WIDGET -->
+          <div class="container">
+            <div class="row">
+              <ul>
+                <li><label class="caption">WIDGET</label></li>
+              </ul>
+              <ul>
+                <li class="nav-item datas1">
+                  <a href="" class="nav-link datas">
+                    <span class="ps-2"><i class="bi bi-stop-circle"></i></span>
+                    <span class="ps-2">Statistics</span>
+                  </a>
+                </li>
+                <li class="nav-item datas1">
+                  <a href="" class="nav-link datas">
+                    <span class="ps-2"><i class="ri-align-item-left-fill"></i></span>
+                    <span class="ps-2">Data</span>
+                  </a>
+                </li>
+                <li class="nav-item datas1 ">
+                  <a href="" class="nav-link datas">
+                    <span class="ps-2"><i class="bi bi-trophy-fill"></i></span>
+                    <span class="ps-2">Chart</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- ADMIN PANEL -->
+          <div class="container">
+            <div class="row">
+              <ul>
+                <li><label class="caption">ADMIN PANEL</label></li>
+              </ul>
+              <div class="accordion" id="accordionA">
+                <div class="accordion">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button  rounded-3 box6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                      style="color: grey;">
+                      <span class="col-lg-2"><i class="bi bi-stack" style="color: grey;"></i></span>
+                      <span class="col-lg-6">Online Courses</span>
+
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionA">
+                    <div class="accordion-body">
+                      <ul class="dash">
+                        <li class=""><a href="" class="nav-link">Dashboard</a></li>
+                        <div class="accordion accordion-flush" id="accordionF">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                              <li data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link ">Teacher
+                                  <span>
+                                    <i class="bi bi-chevron-right mobile "
+                                      style="padding-left: 50px; color: crimson;"></i>
+                                  </span>
+                                </a></li>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                              aria-labelledby="flush-headingOne" data-bs-parent="#accordionF">
+                              <div class="accordion-body rode">
+                                <ul class="dash m-0 p-0">
+                                  <li class=""><a href="" class="nav-link">List</a></li>
+                                  <li class=""><a href="" class="nav-link">Apply</a></li>
+                                  <li class=""><a href="" class="nav-link">Add</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion accordion-flush" id="student">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                              <li data-bs-toggle="collapse" data-bs-target="#flush" aria-expanded="false"
+                                aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link">Student
+                                  <span>
+                                    <i class="bi bi-chevron-right mobile "
+                                      style="padding-left: 50px; color: crimson;"></i>
+                                  </span>
+                                </a></li>
+                            </h2>
+                            <div id="flush" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                              data-bs-parent="#student">
+                              <div class="accordion-body rode">
+                                <ul class="dash m-0 p-0">
+                                  <li class=""><a href="" class="nav-link">List</a></li>
+                                  <li class=""><a href="" class="nav-link">Apply</a></li>
+                                  <li class=""><a href="" class="nav-link">Add</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion accordion-flush" id="Courses">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                              <li data-bs-toggle="collapse" data-bs-target="#flush1" aria-expanded="false"
+                                aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link">Courses
+                                  <span>
+                                    <i class="bi bi-chevron-right mobile "
+                                      style="padding-left: 50px; color: crimson;"></i>
+                                  </span>
+                                </a></li>
+                            </h2>
+                            <div id="flush1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                              data-bs-parent="#Courses">
+                              <div class="accordion-body rode">
+                                <ul class="dash m-0 p-0">
+                                  <li class=""><a href="" class="nav-link">View</a></li>
+                                  <li class=""><a href="" class="nav-link">Add</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <li class=""><a href="" class="nav-link">Pricing</a></li>
+                        <li class=""><a href="" class="nav-link">Site</a></li>
+                        <div class="accordion accordion-flush" id="Setting">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                              <li data-bs-toggle="collapse" data-bs-target="#flush2" aria-expanded="false"
+                                aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link">Setting
+                                  <span>
+                                    <i class="bi bi-chevron-right mobile "
+                                      style="padding-left: 50px; color: crimson;"></i>
+                                  </span>
+                                </a></li>
+                            </h2>
+                            <div id="flush2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                              data-bs-parent="#Setting">
+                              <div class="accordion-body rode">
+                                <ul class="dash m-0 p-0">
+                                  <li class=""><a href="" class="nav-link">View</a></li>
+                                  <li class=""><a href="" class="nav-link">Add</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion  mt-1">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                      style="color: grey;">
+                      <span class="col-lg-2"><i class="ri-user-3-fill" style="color: grey;"></i></span>
+                      <span class="col-lg-6">Membership</span>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionA">
+                    <div class="accordion-body">
+                      <ul class="dash">
+                        <li class=""><a href="" class="nav-link">Dashboard</a></li>
+                        <li class=""><a href="" class="nav-link">List</a></li>
+                        <li class=""><a href="" class="nav-link">Pricing 2</a></li>
+                        <li class=""><a href="" class="nav-link">Setting</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion  mt-1">
+                  <h2 class="accordion-header" id="heading3">
+                    <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" style="color: grey;">
+                      <span class="col-lg-2"><i class="ri-24-hours-line" style="color: grey;"></i></span>
+                      <span class="col-lg-6">Helpdesk</span>
+                    </button>
+                  </h2>
+                  <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                    data-bs-parent="#accordionA">
+                    <div class="accordion-body">
+                      <ul class="dash">
+                        <li class=""><a href="" class="nav-link">Dashboard</a></li>
+
+                        <div class="accordion accordion-flush" id="Ticket">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                              <li data-bs-toggle="collapse" data-bs-target="#flush1" aria-expanded="false"
+                                aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link">Ticket
+                                  <span>
+                                    <i class="bi bi-chevron-right mobile "
+                                      style="padding-left: 50px; color: crimson;"></i>
+                                  </span>
+                                </a></li>
+                            </h2>
+                            <div id="flush1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                              data-bs-parent="#Ticket">
+                              <div class="accordion-body rode">
+                                <ul class="dash m-0 p-0">
+                                  <li class=""><a href="" class="nav-link">Create</a></li>
+                                  <li class=""><a href="" class="nav-link">list</a></li>
+                                  <li class=""><a href="" class="nav-link">Details</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <li class=""><a href="" class="nav-link">Customer</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion  mt-1">
+                  <h2 class="accordion-header" id="heading4">
+                    <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4" style="color: grey;">
+                      <span class="col-lg-2"><i class="bi bi-receipt" style="color: grey;"></i></span>
+                      <span class="col-lg-6">Invoice</span>
+                    </button>
+                  </h2>
+                  <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                    data-bs-parent="#accordionA">
+                    <div class="accordion-body">
+                      <ul class="dash">
+                        <li class=""><a href="" class="nav-link">Dashboard</a></li>
+                        <li class=""><a href="" class="nav-link">Create</a></li>
+                        <li class=""><a href="" class="nav-link">Details</a></li>
+                        <li class=""><a href="" class="nav-link">List</a></li>
+                        <li class=""><a href="" class="nav-link">Edit</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- UI COMPONENTS -->
+          <div class="container">
+            <div class="row">
+              <ul>
+                <li><label class="caption">UI COMPONENTS</label></li>
+              </ul>
+              <ul>
+                <li class="nav-item datas1">
+                  <a href="" class="nav-link datas">
+                    <span class="ps-2"><i class="ri-box-3-fill"></i></span>
+                    <span class="ps-2">Components</span>
+                  </a>
+                </li>
+                <li class="nav-item datas1">
+                  <a href="" class="nav-link datas">
+                    <span class="ps-2"><i class="bi bi-flag-fill"></i></span>
+                    <span class="ps-2">Animation</span>
+                  </a>
+                </li>
+                <div class="accordion  " id="accordionE">
+                  <div class="accordion hub mt-0">
+                    <h2 class="accordion-header " id="heading2">
+                      <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+                        <span class="col-lg-2"><i class="ri-pie-chart-fill"
+                            style="color: grey; padding-left: 5px;"></i></span>
+                        <span class="col-lg-6">Icons</span>
+                      </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                      data-bs-parent="#accordionE">
+                      <div class="accordion-body">
+                        <ul class="dash">
+                          <li class=""><a href="" class="nav-link">Vertical</a></li>
+                          <li class=""><a href="" class="nav-link">Horizontal</a></li>
+                          <li class=""><a href="" class="nav-link">Layouts 2</a></li>
+                          <li class=""><a href="" class="nav-link">Compact</a></li>
+                          <li class=""><a href="" class="nav-link">Tab</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <!-- FORMS -->
+          <div class="container">
+            <div class="row">
+              <ul>
+                <li><label class="caption">FORMS</label></li>
+              </ul>
+              <div class="accordion" id="accordionC">
+                <div class="accordion  mt-1">
+                  <h2 class="accordion-header" id="heading5">
+                    <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5" style="color: grey;">
+                      <span class="col-lg-2"><i class="bi bi-ui-checks-grid" style="color: grey;"></i></span>
+                      <span class="col-lg-6">Forms Element</span>
+                    </button>
+                  </h2>
+                  <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                    data-bs-parent="#accordionC">
+                    <div class="accordion-body">
+                      <ul class="dash">
+                        <li class=""><a href="" class="nav-link">Form Basic</a></li>
+                        <li class=""><a href="" class="nav-link">Form Floating</a></li>
+                        <li class=""><a href="" class="nav-link">Form Options</a></li>
+                        <li class=""><a href="" class="nav-link">Inputs Groups</a></li>
+                        <li class=""><a href="" class="nav-link">Checkbox</a></li>
+                        <li class=""><a href="" class="nav-link">Radio</a></li>
+                        <li class=""><a href="" class="nav-link">Switch</a></li>
+                        <li class=""><a href="" class="nav-link">Mega option</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion  mt-1">
+                  <h2 class="accordion-header" id="heading6">
+                    <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6" style="color: grey;">
+                      <span class="col-lg-2"><i class="bi bi-bug-fill" style="color: grey;"></i></span>
+                      <span class="col-lg-6">Forms Plugins</span>
+                    </button>
+                  </h2>
+                  <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                    data-bs-parent="#accordionC">
+                    <div class="accordion-body">
+                      <ul class="dash">
+                        <div class="accordion accordion-flush" id="Date">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="fl1">
+                              <li data-bs-toggle="collapse" data-bs-target="#f1" aria-expanded="false"
+                                aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link">Date
+                                  <span>
+                                    <i class="bi bi-chevron-right mobile "
+                                      style="padding-left: 50px; color: crimson;"></i>
+                                  </span>
+                                </a></li>
+                            </h2>
+                            <div id="f1" class="accordion-collapse collapse" aria-labelledby="fl1"
+                              data-bs-parent="#Date">
+                              <div class="accordion-body rode">
+                                <ul class="dash m-0 p-0">
+                                  <li class=""><a href="" class="nav-link">Datepicker</a></li>
+                                  <li class=""><a href="" class="nav-link">Date Range Picker</a></li>
+                                  <li class=""><a href="" class="nav-link">Timepicker</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion accordion-flush" id="Select">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="fl2">
+                              <li data-bs-toggle="collapse" data-bs-target="#f2" aria-expanded="false"
+                                aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link">Select
+                                  <span>
+                                    <i class="bi bi-chevron-right mobile "
+                                      style="padding-left: 50px; color: crimson;"></i>
+                                  </span>
+                                </a></li>
+                            </h2>
+                            <div id="f2" class="accordion-collapse collapse" aria-labelledby="fl2"
+                              data-bs-parent="#Select">
+                              <div class="accordion-body rode">
+                                <ul class="dash m-0 p-0">
+                                  <li class=""><a href="" class="nav-link">Choices js</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <li class=""><a href="" class="nav-link">Rating</a></li>
+                        <li class=""><a href="" class="nav-link">Google reCaptcha</a></li>
+                        <li class=""><a href="" class="nav-link">Input Masks</a></li>
+                        <li class=""><a href="" class="nav-link">Clipboard</a></li>
+                        <li class=""><a href="" class="nav-link">Nouislider</a></li>
+                        <li class=""><a href="" class="nav-link">Bootstrap Switch</a></li>
+                        <li class=""><a href="" class="nav-link">Typeahead</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion  mt-1">
+                  <h2 class="accordion-header" id="heading7">
+                    <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7" style="color: grey;">
+                      <span class="col-lg-2"><i class="ri-text-snippet" style="color: grey;"></i></span>
+                      <span class="col-lg-6">Text Editors</span>
+                    </button>
+                  </h2>
+                  <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                    data-bs-parent="#accordionC">
+                    <div class="accordion-body">
+                      <ul class="dash">
+                        <li class=""><a href="" class="nav-link">Tinymce</a></li>
+                        <li class=""><a href="" class="nav-link">Quill</a></li>
+                        <div class="accordion accordion-flush" id=" editor">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="fl3">
+                              <li data-bs-toggle="collapse" data-bs-target="#f3" aria-expanded="false"
+                                aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link">CK editor
+                                  <span>
+                                    <i class="bi bi-chevron-right mobile "
+                                      style="padding-left: 50px; color: crimson;"></i>
+                                  </span>
+                                </a></li>
+                            </h2>
+                            <div id="f3" class="accordion-collapse collapse" aria-labelledby="fl3"
+                              data-bs-parent="#editor">
+                              <div class="accordion-body rode">
+                                <ul class="dash m-0 p-0">
+                                  <li class=""><a href="" class="nav-link">Classic</a></li>
+                                  <li class=""><a href="" class="nav-link">Document</a></li>
+                                  <li class=""><a href="" class="nav-link">Inline</a></li>
+                                  <li class=""><a href="" class="nav-link">Balloon</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <li class=""><a href="" class="nav-link">Markdown</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion  mt-1">
+                  <h2 class="accordion-header" id="heading8">
+                    <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8" style="color: grey;">
+                      <span class="col-lg-2"><i class="ri-align-item-horizontal-center-fill"
+                          style="color: grey;"></i></span>
+                      <span class="col-lg-6">Form Layouts</span>
+                    </button>
+                  </h2>
+                  <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+                    data-bs-parent="#accordionC">
+                    <div class="accordion-body">
+                      <ul class="dash">
+                        <li class=""><a href="" class="nav-link">Layouts</a></li>
+                        <li class=""><a href="" class="nav-link">Multicolumn</a></li>
+                        <li class=""><a href="" class="nav-link">Actionbars</a></li>
+                        <li class=""><a href="" class="nav-link"> Sticky Action bars</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion  mt-1">
+                  <h2 class="accordion-header" id="heading9">
+                    <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9" style="color: grey;">
+                      <span class="col-lg-2"><i class="ri-upload-cloud-fill" style="color: grey;"></i></span>
+                      <span class="col-lg-6">File Upload</span>
+                    </button>
+                  </h2>
+                  <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
+                    data-bs-parent="#accordionC">
+                    <div class="accordion-body">
+                      <ul class="dash">
+                        <li class=""><a href="" class="nav-link">Dropzone</a></li>
+                        <li class=""><a href="" class="nav-link">Uppy</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul>
+                <li class="nav-item datas1">
+                  <a href="" class="nav-link datas">
+                    <span class="ps-1"><i class="bi bi-wallet-fill"></i></span>
+                    <span class="" style="padding-left: 12px;">Wizard</span>
+                  </a>
+                </li>
+                <li class="nav-item datas1">
+                  <a href="" class="nav-link datas">
+                    <span class="ps-1"><i class="ri-align-item-top-fill"></i></span>
+                    <span class="" style="padding-left: 12px;">Form Validation</span>
+                  </a>
+                </li>
+                <li class="nav-item datas1">
+                  <a href="" class="nav-link datas">
+                    <span class="ps-1"><i class="ri-planet-fill"></i></span>
+                    <span class="" style="padding-left: 12px;">Image cropper</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <!-- Table -->
+          <div class="container">
+            <div class="row">
+              <ul>
+                <li><label class="caption">TABLE</label></li>
+              </ul>
+              <div class="accordion" id="accordionD">
+                <div class="accordion  mt-1">
+                  <h2 class="accordion-header" id="heading10">
+                    <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10"
+                      style="color: grey;">
+                      <span class="col-lg-2"><i class="bi bi-list-task" style="color: grey;"></i></span>
+                      <span class="col-lg-6">Boostrap Table</span>
+                    </button>
+                  </h2>
+                  <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
+                    data-bs-parent="#accordionD">
+                    <div class="accordion-body">
+                      <ul class="dash">
+                        <li class=""><a href="" class="nav-link">Basic table</a></li>
+                        <li class=""><a href="" class="nav-link">Sizing table</a></li>
+                        <li class=""><a href="" class="nav-link">Border table</a></li>
+                        <li class=""><a href="" class="nav-link">Styling table</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion  mt-1">
+                  <h2 class="accordion-header" id="heading11">
+                    <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11"
+                      style="color: grey;">
+                      <span class="col-lg-2"><i class="bi bi-chat-square-text-fill" style="color: grey;"></i></span>
+                      <span class="col-lg-6">Vanilla Table</span>
+                    </button>
+                  </h2>
+                  <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+                    data-bs-parent="#accordionD">
+                    <div class="accordion-body">
+                      <ul class="dash">
+                        <li class=""><a href="" class="nav-link">Basic initialization</a></li>
+                        <li class=""><a href="" class="nav-link">Dynamic Import</a></li>
+                        <li class=""><a href="" class="nav-link">Render Column Cells</a></li>
+                        <li class=""><a href="" class="nav-link">Column Manipulation</a></li>
+                        <li class=""><a href="" class="nav-link">Datetime Sorting</a></li>
+                        <li class=""><a href="" class="nav-link">Methods</a></li>
+                        <li class=""><a href="" class="nav-link">Add Rows</a></li>
+                        <li class=""><a href="" class="nav-link">Fetch API</a></li>
+                        <li class=""><a href="" class="nav-link">Filters</a></li>
+                        <li class=""><a href="" class="nav-link">Export</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion  mt-1">
+                  <h2 class="accordion-header" id="heading12">
+                    <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12"
+                      style="color: grey;">
+                      <span class="col-lg-2"><i class="ri-pie-chart-2-fill" style="color: grey;"></i></span>
+                      <span class="col-lg-6">Data Table</span>
+                    </button>
+                  </h2>
+                  <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12"
+                    data-bs-parent="#accordionD">
+                    <div class="accordion-body">
+                      <ul class="dash">
+                        <li class=""><a href="" class="nav-link">Advance initialization</a></li>
+                        <li class=""><a href="" class="nav-link">Styling</a></li>
+                        <li class=""><a href="" class="nav-link">API</a></li>
+                        <li class=""><a href="" class="nav-link">Plug-in</a></li>
+                        <li class=""><a href="" class="nav-link">Data sources</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion  mt-1">
+                  <h2 class="accordion-header" id="heading13">
+                    <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13"
+                      style="color: grey;">
+                      <span class="col-lg-2"><i class="bi bi-subtract" style="color: grey;"></i></span>
+                      <span class="col-lg-6">DT extensions</span>
+                    </button>
+                  </h2>
+                  <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13"
+                    data-bs-parent="#accordionD">
+                    <div class="accordion-body">
+                      <ul class="dash">
+                        <li class=""><a href="" class="nav-link">Autofill</a></li>
+                        <div class="accordion accordion-flush" id="button01">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="fl14">
+                              <li data-bs-toggle="collapse" data-bs-target="#f14" aria-expanded="false"
+                                aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link">Button
+                                  <span>
+                                    <i class="bi bi-chevron-right mobile "
+                                      style="padding-left: 50px; color: crimson;"></i>
+                                  </span>
+                                </a></li>
+                            </h2>
+                            <div id="f14" class="accordion-collapse collapse" aria-labelledby="fl14"
+                              data-bs-parent="#button01">
+                              <div class="accordion-body rode">
+                                <ul class="dash m-0 p-0">
+                                  <li class=""><a href="" class="nav-link">Basic button</a></li>
+                                  <li class=""><a href="" class="nav-link">Data export</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <li class=""><a href="" class="nav-link">Col reorder</a></li>
+                        <li class=""><a href="" class="nav-link">Fixed columns</a></li>
+                        <li class=""><a href="" class="nav-link">Fixed header</a></li>
+                        <li class=""><a href="" class="nav-link">Key table</a></li>
+                        <li class=""><a href="" class="nav-link">Responsive</a></li>
+                        <li class=""><a href="" class="nav-link">Row reorder</a></li>
+                        <li class=""><a href="" class="nav-link">Scroller</a></li>
+                        <li class=""><a href="" class="nav-link">Select table</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CHARTS ∧ MAPS -->
+          <div class="container">
+            <div class="row">
+              <ul>
+                <li><label class="caption">CHARTS∧MAPS</label></li>
+              </ul>
+              <div class="accordion" id="accordionH">
+                <div class="accordion  mt-1">
+                  <h2 class="accordion-header" id="heading15">
+                    <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15"
+                      style="color: grey;">
+                      <span class="col-lg-2"><i class="ri-pie-chart-2-fill" style="color: grey;"></i></span>
+                      <span class="col-lg-6">Charts</span>
+                    </button>
+                  </h2>
+                  <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15"
+                    data-bs-parent="#accordionH">
+                    <div class="accordion-body">
+                      <ul class="dash">
+                        <li class=""><a href="" class="nav-link">Apex Chart</a></li>
+                        <li class=""><a href="" class="nav-link">Peity Chart</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion  mt-1">
+                  <h2 class="accordion-header" id="heading16">
+                    <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16"
+                      style="color: grey;">
+                      <span class="col-lg-2"><i class="ri-triangle-fill" style="color: grey;"></i></span>
+                      <span class="col-lg-6">Maps</span>
+                    </button>
+                  </h2>
+                  <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16"
+                    data-bs-parent="#accordionH">
+                    <div class="accordion-body">
+                      <ul class="dash">
+                        <li class=""><a href="" class="nav-link">Vector Maps</a></li>
+                        <li class=""><a href="" class="nav-link">Gmaps</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- APPLICATION -->
+          <div class="container">
+            <div class="row">
+              <ul>
+                <li><label class="caption">APPLICATION</label></li>
+              </ul>
+              <ul>
+                <li class="nav-item datas1">
+                  <a href="" class="nav-link datas">
+                    <span class="ps-2"><i class="bi bi-calendar2-event-fill"></i></span>
+                    <span class="ps-2">Calender</span>
+                  </a>
+                </li>
+                <li class="nav-item datas1">
+                  <a href="" class="nav-link datas">
+                    <span class="ps-2"><i class="bi bi-chat-right-text-fill"></i></span>
+                    <span class="ps-2">Chat</span>
+                  </a>
+                </li>
+                <li class="nav-item datas1">
+                  <a href="" class="nav-link datas">
+                    <span class="ps-2"><i class="bi bi-file-earmark-break-fill"></i></span>
+                    <span class="ps-2">Customer</span>
+                  </a>
+                </li>
+                <div class="accordion  " id="accordionJ">
+                  <div class="accordion hub mt-0">
+                    <h2 class="accordion-header " id="heading18">
+                      <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapseTwo"
+                        style="color: grey;">
+                        <span class="col-lg-2 ps-1"><i class="ri-lock-2-fill" style="color: grey;"></i></span>
+                        <span class="col-lg-6">E-commerce</span>
+                      </button>
+                    </h2>
+                    <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18"
+                      data-bs-parent="#accordionJ">
+                      <div class="accordion-body">
+                        <ul class="dash">
+                          <li class=""><a href="" class="nav-link">Product</a></li>
+                          <li class=""><a href="" class="nav-link">Product Details</a></li>
+                          <li class=""><a href="" class="nav-link">Product list</a></li>
+                          <li class=""><a href="" class="nav-link">Add New Product</a></li>
+                          <li class=""><a href="" class="nav-link">Checkout</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <li class="nav-item datas1">
+                  <a href="" class="nav-link datas">
+                    <span class="ps-2"><i class="bi bi-file-image-fill"></i></span>
+                    <span class="ps-2">File manager</span>
+                  </a>
+                </li>
+                <li class="nav-item datas1">
+                  <a href="" class="nav-link datas">
+                    <span class="ps-2"><i class="bi bi-envelope-at-fill"></i></span>
+                    <span class="ps-2">Mail</span>
+                  </a>
+                </li>
+                <div class="accordion  " id="accordionK">
+                  <div class="accordion hub mt-0">
+                    <h2 class="accordion-header " id="heading19">
+                      <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapseTwo"
+                        style="color: grey;">
+                        <span class="col-lg-2 ps-1"><i class="bi bi-person-square" style="color: grey;"></i></span>
+                        <span class="col-lg-6">Users</span>
+                      </button>
+                    </h2>
+                    <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="heading19"
+                      data-bs-parent="#accordionK">
+                      <div class="accordion-body">
+                        <ul class="dash">
+                          <li class=""><a href="" class="nav-link">Account Profile</a></li>
+                          <li class=""><a href="" class="nav-link">Social Media</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="right">
+        <div class="navbar navbar-expand-lg navbar-light bg-light bar position-sticky top-0">
+          <div class="container-fluid d-flex justify-content-end">
+
+            <div class="col-9  d-flex">
+              <div class="varden d-none d-sm-none d-md-none d-lg-block">
+                <i class="bi bi-list symbol"></i>
+              </div>
+              <div class="varden1 d-block d-sm d-lg-block d-md-block d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#Yourson" aria-controls="offcanvasRight">
+                <i class="bi bi-list symbol15"></i>
+              </div>
+              
+
+              <div class="d-flex ps-2 d-none d-md-block">
+                <i class="bi bi-search symbol1 pt-md-2 pt-lg-0"></i>
+                <input type="text" placeholder="      ctrl +k" class="holder">
+              </div>
+            </div>
+            <div class="col-3 d-flex justify-content-end ">
+              <ul class="menu1 d-flex ">
+                <li class="submenu1">
+                  <a href="" class="pratik"><i class="bi bi-brightness-high-fill icon2"></i></a>
+                  <ul class="maingoal">
+                    <li class="choke1 "><a href="" class="pratik1">
+                        <span><i class="bi bi-moon-fill"></i></span>&nbsp;
+                        <span>Dark</span>
+                      </a></li>
+                    <li class="choke1 "><a href="" class="pratik1">
+                        <span><i class="bi bi-brightness-high-fill"></i></span>&nbsp;
+                        <span>Light</span>
+                      </a></li>
+                    <li class="choke1"><a href="" class="pratik1">
+                        <span><i class="bi bi-gear-fill"></i></span>&nbsp;
+                        <span>Default</span>
+                      </a></li>
+                  </ul>
+                </li>
+
+                <li class="submenu1">
+                  <a href="#">
+                    <i class="bi bi-gear-fill icon2"></i>
+                  </a>
+                  <ul class="maingoal2">
+                    <li class="choke1 "><a href="" class="pratik1">
+                        <span><i class="bi bi-person"></i></span>&nbsp;
+                        <span>My Account</span>
+                      </a></li>
+                    <li class="choke1 "><a href="" class="pratik1">
+                        <span><i class="bi bi-gear"></i></span>&nbsp;
+                        <span>Settings</span>
+                      </a></li>
+                    <li class="choke1"><a href="" class="pratik1">
+                        <span><i class="bi bi-headset"></i></span>&nbsp;
+                        <span>Support</span>
+                      </a></li>
+                    <li class="choke1"><a href="" class="pratik1">
+                        <span><i class="ri-lock-line"></i></span>&nbsp;
+                        <span>Lock Screen</span>
+                      </a></li>
+                    <li class="choke1"><a href="" class="pratik1">
+                        <span><i class="ri-shut-down-line"></i></span>&nbsp;
+                        <span>Logout</span>
+                      </a></li>
+                  </ul>
+                </li>
+                <li class="submenu1" data-bs-toggle="offcanvas" data-bs-target="#corse" aria-controls="offcanvasRight">
+                  <i class="bi bi-lightning-charge-fill icon2"></i>
+                </li>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="corse" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">What's new announcement?</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <p class="text-span">Today</p>
+                    <!-- card1 -->
+                    <div class="card mb-3">
+                      <div class="card-body bg-light">
+                        <div class="align-items-center d-flex flex-wrap gap-2 mb-3">
+                          <div class="badge bg-light-success fs-6">Big News</div>
+                          <p class="mb-0 text-muted">2 min ago</p>
+                          <span class="badge dot bg-warning" style="height: 2px; width: 1px;">.</span>
+                        </div>
+                        <h5 class="mb-3">Able Pro is Redesigned</h5>
+                        <p class="textsome">Able Pro is completely renowed with high aesthetics User Interface.</p>
+                        <img src="images/img-announcement-1.png" alt="img" class="img-fluid mb-3 w-100">
+                        <div class="row tv">
+                          <div class="col-12 w-100">
+                            <div class="d-grid">
+                              <a class="btn btn-outline-secondary rounded-pill" href="https://1.envato.market/zNkqj6"
+                                target="_blank">Check Now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- card2 -->
+                    <div class="card mb-3">
+                      <div class="card-body bg-light">
+                        <div class="align-items-center d-flex flex-wrap gap-2 mb-3">
+                          <div class="badge bg-light-success fs-6">Offer</div>
+                          <p class="mb-0 text-muted">2 hour ago</p>
+                          <span class="badge dot bg-warning" style="height: 2px; width: 1px;">.</span>
+                        </div>
+                        <h5 class="mb-3">Able Pro is in best offer price</h5>
+                        <p class="textsome">Download Able Pro exclusive on themeforest with best price.</p>
+                        <img src="images/img-announcement-2.png" alt="img" class="img-fluid mb-3 w-100">
+                      </div>
+                    </div>
+                    <!-- card3 -->
+                    <p class="text-span">Yesterday</p>
+                    <div class="card mb-3">
+                      <div class="card-body bg-light">
+                        <div class="align-items-center d-flex flex-wrap gap-2 mb-3">
+                          <div class="badge bg-light-success fs-6">Blog</div>
+                          <p class="mb-0 text-muted">12 hour ago</p>
+                          <span class="badge dot bg-warning" style="height: 2px; width: 1px;">.</span>
+                        </div>
+                        <h5 class="mb-3">Featured Dashboard Template</h5>
+                        <p class="textsome">Do you know Able Pro is one of the featured dashboard template selected by
+                          Themeforest team.?</p>
+                        <img src="images/img-announcement-3.png" alt="img" class="img-fluid mb-3 w-100">
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="card-body bg-light">
+                        <div class="align-items-center d-flex flex-wrap gap-2 mb-3">
+                          <div class="badge bg-light-success fs-6">Announcement</div>
+                          <p class="mb-0 text-muted">Announcement</p>
+                          <span class="badge dot bg-warning" style="height: 2px; width: 1px;">.</span>
+                        </div>
+                        <h5 class="mb-3">Buy Once - Get Free Updated lifetime</h5>
+                        <p class="textsome">Get the lifetime free updates once you purchase the Able Pro.</p>
+                        <img src="images/img-announcement-4.png" alt="img" class="img-fluid mb-3 w-100">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <li class="submenu2 " data-bs-toggle="modal" data-bs-target="#modal">
+                  <i class="bi bi-bell-fill icon2"></i>
+                  <sup class="badge rounded-pill bg-secondary super ">3</sup>
+                </li>
+
+                <li class="submenu1" data-bs-toggle="modal" data-bs-target="#modal2">
+                  <img src="images/images2.png" alt="not found" height="35px" width="35px" class="img2">
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="offcanvas offcanvas-start w-50" tabindex="-1" id="Yourson" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="nav">
+              <div class="container">
+                <div class="row">
+                  <span class="logo3">Able <sup class="pose2">pro</sup> <sup
+                      class="pose badge rounded-pill bg-light text-secondary  ">v9.0</sup></span>
+                </div>
+              </div>
+              <!-- card -->
+              <div class="container  mt-2 ">
+                <div class="row">
+                  <div class="flex4 d-flex  " style="width: 90%; margin: auto;  background-color: #f3f5f7; height: 80px;">
+                    <div class="profile col-lg-2" style="margin: 18px 15px 15px 14px;">
+                      <img src="images/avatar-1.jpg" alt="" width="43px" height="43px" class="profile1">
+                    </div>
+                    <div class="details1 col-lg-5">
+                      <h3>Jonh Smith</h3>
+                      <p>Administrator</p>
+                    </div>
+                    <div class="counter col-lg-5">
+                      <div class="cross"><i class="ri-filter-3-line foul"></i></div>
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+              <div class="flex5" style="width: 90%; margin: auto;  background-color: #f3f5f7; ">
+                <ul class="back">
+                  <li><a href="#" class="subback">
+                      <i class="ri-user-line"></i>&nbsp;
+                      <span>My Account</span>
+                    </a></li>
+                  <li><a href="#" class="subback">
+                      <i class="ri-settings-2-line"></i>&nbsp;
+                      <span>Settings</span>
+                    </a></li>
+                  <li><a href="#" class="subback">
+                      <i class="ri-lock-2-line"></i>&nbsp;
+                      <span>Lock Screen</span>
+                    </a></li>
+                  <li><a href="#" class="subback">
+                      <i class="ri-logout-circle-r-line"></i>&nbsp;
+                      <span>Logout</span>
+                    </a></li>
+                </ul>
+              </div>
+              <!-- Navigation -->
+              <div class="container">
+                <div class="row">
+                  <ul>
+                    <li><label class="caption">Navagation</label></li>
+                  </ul>
+                  <div class="accordion  " id="accordionE">
+                    <div class="accordion">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button  rounded-3 box5" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne" style="color: grey;">
+                          <span class="col-lg-2"><i class="ri-line-chart-line"></i></span>
+                          <span class="col-lg-6">Dashboard</span>
+                          <div class="div12">
+                            <span class="badge rounded-circle  bg-primary ">2</span>
+                          </div>
+    
+                        </button>
+                      </h2>
+                      <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionE">
+                        <div class="accordion-body">
+                          <ul class="dash">
+                            <li class=""><a href="" class="nav-link">Default</a></li>
+                            <li class=""><a href="" class="nav-link">Analytics</a></li>
+                            <li class=""><a href="" class="nav-link">Finance</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion  mt-2">
+                      <h2 class="accordion-header" id="heading2">
+                        <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseTwo"
+                          style="color: grey;">
+                          <span class="col-lg-2"><i class="bi bi-union" style="color: grey;"></i></span>
+                          <span class="col-lg-6">Layouts</span>
+                        </button>
+                      </h2>
+                      <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                        data-bs-parent="#accordionE">
+                        <div class="accordion-body">
+                          <ul class="dash">
+                            <li class=""><a href="" class="nav-link">Vertical</a></li>
+                            <li class=""><a href="" class="nav-link">Horizontal</a></li>
+                            <li class=""><a href="" class="nav-link">Layouts 2</a></li>
+                            <li class=""><a href="" class="nav-link">Compact</a></li>
+                            <li class=""><a href="" class="nav-link">Tab</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- WIDGET -->
+              <div class="container">
+                <div class="row">
+                  <ul>
+                    <li><label class="caption">WIDGET</label></li>
+                  </ul>
+                  <ul>
+                    <li class="nav-item datas1">
+                      <a href="" class="nav-link datas">
+                        <span class="ps-2"><i class="bi bi-stop-circle"></i></span>
+                        <span class="ps-2">Statistics</span>
+                      </a>
+                    </li>
+                    <li class="nav-item datas1">
+                      <a href="" class="nav-link datas">
+                        <span class="ps-2"><i class="ri-align-item-left-fill"></i></span>
+                        <span class="ps-2">Data</span>
+                      </a>
+                    </li>
+                    <li class="nav-item datas1 ">
+                      <a href="" class="nav-link datas">
+                        <span class="ps-2"><i class="bi bi-trophy-fill"></i></span>
+                        <span class="ps-2">Chart</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- ADMIN PANEL -->
+              <div class="container">
+                <div class="row">
+                  <ul>
+                    <li><label class="caption">ADMIN PANEL</label></li>
+                  </ul>
+                  <div class="accordion" id="accordionA">
+                    <div class="accordion">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button  rounded-3 box6" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                          style="color: grey;">
+                          <span class="col-lg-2"><i class="bi bi-stack" style="color: grey;"></i></span>
+                          <span class="col-lg-6">Online Courses</span>
+    
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionA">
+                        <div class="accordion-body">
+                          <ul class="dash">
+                            <li class=""><a href="" class="nav-link">Dashboard</a></li>
+                            <div class="accordion accordion-flush" id="accordionF">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                  <li data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link ">Teacher
+                                      <span>
+                                        <i class="bi bi-chevron-right mobile "
+                                          style="padding-left: 50px; color: crimson;"></i>
+                                      </span>
+                                    </a></li>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                  aria-labelledby="flush-headingOne" data-bs-parent="#accordionF">
+                                  <div class="accordion-body rode">
+                                    <ul class="dash m-0 p-0">
+                                      <li class=""><a href="" class="nav-link">List</a></li>
+                                      <li class=""><a href="" class="nav-link">Apply</a></li>
+                                      <li class=""><a href="" class="nav-link">Add</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion accordion-flush" id="student">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                  <li data-bs-toggle="collapse" data-bs-target="#flush" aria-expanded="false"
+                                    aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link">Student
+                                      <span>
+                                        <i class="bi bi-chevron-right mobile "
+                                          style="padding-left: 50px; color: crimson;"></i>
+                                      </span>
+                                    </a></li>
+                                </h2>
+                                <div id="flush" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                                  data-bs-parent="#student">
+                                  <div class="accordion-body rode">
+                                    <ul class="dash m-0 p-0">
+                                      <li class=""><a href="" class="nav-link">List</a></li>
+                                      <li class=""><a href="" class="nav-link">Apply</a></li>
+                                      <li class=""><a href="" class="nav-link">Add</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion accordion-flush" id="Courses">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                  <li data-bs-toggle="collapse" data-bs-target="#flush1" aria-expanded="false"
+                                    aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link">Courses
+                                      <span>
+                                        <i class="bi bi-chevron-right mobile "
+                                          style="padding-left: 50px; color: crimson;"></i>
+                                      </span>
+                                    </a></li>
+                                </h2>
+                                <div id="flush1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                                  data-bs-parent="#Courses">
+                                  <div class="accordion-body rode">
+                                    <ul class="dash m-0 p-0">
+                                      <li class=""><a href="" class="nav-link">View</a></li>
+                                      <li class=""><a href="" class="nav-link">Add</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <li class=""><a href="" class="nav-link">Pricing</a></li>
+                            <li class=""><a href="" class="nav-link">Site</a></li>
+                            <div class="accordion accordion-flush" id="Setting">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                  <li data-bs-toggle="collapse" data-bs-target="#flush2" aria-expanded="false"
+                                    aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link">Setting
+                                      <span>
+                                        <i class="bi bi-chevron-right mobile "
+                                          style="padding-left: 50px; color: crimson;"></i>
+                                      </span>
+                                    </a></li>
+                                </h2>
+                                <div id="flush2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                                  data-bs-parent="#Setting">
+                                  <div class="accordion-body rode">
+                                    <ul class="dash m-0 p-0">
+                                      <li class=""><a href="" class="nav-link">View</a></li>
+                                      <li class=""><a href="" class="nav-link">Add</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="accordion  mt-1">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                          style="color: grey;">
+                          <span class="col-lg-2"><i class="ri-user-3-fill" style="color: grey;"></i></span>
+                          <span class="col-lg-6">Membership</span>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionA">
+                        <div class="accordion-body">
+                          <ul class="dash">
+                            <li class=""><a href="" class="nav-link">Dashboard</a></li>
+                            <li class=""><a href="" class="nav-link">List</a></li>
+                            <li class=""><a href="" class="nav-link">Pricing 2</a></li>
+                            <li class=""><a href="" class="nav-link">Setting</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion  mt-1">
+                      <h2 class="accordion-header" id="heading3">
+                        <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" style="color: grey;">
+                          <span class="col-lg-2"><i class="ri-24-hours-line" style="color: grey;"></i></span>
+                          <span class="col-lg-6">Helpdesk</span>
+                        </button>
+                      </h2>
+                      <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                        data-bs-parent="#accordionA">
+                        <div class="accordion-body">
+                          <ul class="dash">
+                            <li class=""><a href="" class="nav-link">Dashboard</a></li>
+    
+                            <div class="accordion accordion-flush" id="Ticket">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                  <li data-bs-toggle="collapse" data-bs-target="#flush1" aria-expanded="false"
+                                    aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link">Ticket
+                                      <span>
+                                        <i class="bi bi-chevron-right mobile "
+                                          style="padding-left: 50px; color: crimson;"></i>
+                                      </span>
+                                    </a></li>
+                                </h2>
+                                <div id="flush1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                                  data-bs-parent="#Ticket">
+                                  <div class="accordion-body rode">
+                                    <ul class="dash m-0 p-0">
+                                      <li class=""><a href="" class="nav-link">Create</a></li>
+                                      <li class=""><a href="" class="nav-link">list</a></li>
+                                      <li class=""><a href="" class="nav-link">Details</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <li class=""><a href="" class="nav-link">Customer</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion  mt-1">
+                      <h2 class="accordion-header" id="heading4">
+                        <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4" style="color: grey;">
+                          <span class="col-lg-2"><i class="bi bi-receipt" style="color: grey;"></i></span>
+                          <span class="col-lg-6">Invoice</span>
+                        </button>
+                      </h2>
+                      <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                        data-bs-parent="#accordionA">
+                        <div class="accordion-body">
+                          <ul class="dash">
+                            <li class=""><a href="" class="nav-link">Dashboard</a></li>
+                            <li class=""><a href="" class="nav-link">Create</a></li>
+                            <li class=""><a href="" class="nav-link">Details</a></li>
+                            <li class=""><a href="" class="nav-link">List</a></li>
+                            <li class=""><a href="" class="nav-link">Edit</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- UI COMPONENTS -->
+              <div class="container">
+                <div class="row">
+                  <ul>
+                    <li><label class="caption">UI COMPONENTS</label></li>
+                  </ul>
+                  <ul>
+                    <li class="nav-item datas1">
+                      <a href="" class="nav-link datas">
+                        <span class="ps-2"><i class="ri-box-3-fill"></i></span>
+                        <span class="ps-2">Components</span>
+                      </a>
+                    </li>
+                    <li class="nav-item datas1">
+                      <a href="" class="nav-link datas">
+                        <span class="ps-2"><i class="bi bi-flag-fill"></i></span>
+                        <span class="ps-2">Animation</span>
+                      </a>
+                    </li>
+                    <div class="accordion  " id="accordionE">
+                      <div class="accordion hub mt-0">
+                        <h2 class="accordion-header " id="heading2">
+                          <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+                            <span class="col-lg-2"><i class="ri-pie-chart-fill"
+                                style="color: grey; padding-left: 5px;"></i></span>
+                            <span class="col-lg-6">Icons</span>
+                          </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                          data-bs-parent="#accordionE">
+                          <div class="accordion-body">
+                            <ul class="dash">
+                              <li class=""><a href="" class="nav-link">Vertical</a></li>
+                              <li class=""><a href="" class="nav-link">Horizontal</a></li>
+                              <li class=""><a href="" class="nav-link">Layouts 2</a></li>
+                              <li class=""><a href="" class="nav-link">Compact</a></li>
+                              <li class=""><a href="" class="nav-link">Tab</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+              <!-- FORMS -->
+              <div class="container">
+                <div class="row">
+                  <ul>
+                    <li><label class="caption">FORMS</label></li>
+                  </ul>
+                  <div class="accordion" id="accordionC">
+                    <div class="accordion  mt-1">
+                      <h2 class="accordion-header" id="heading5">
+                        <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5" style="color: grey;">
+                          <span class="col-lg-2"><i class="bi bi-ui-checks-grid" style="color: grey;"></i></span>
+                          <span class="col-lg-6">Forms Element</span>
+                        </button>
+                      </h2>
+                      <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                        data-bs-parent="#accordionC">
+                        <div class="accordion-body">
+                          <ul class="dash">
+                            <li class=""><a href="" class="nav-link">Form Basic</a></li>
+                            <li class=""><a href="" class="nav-link">Form Floating</a></li>
+                            <li class=""><a href="" class="nav-link">Form Options</a></li>
+                            <li class=""><a href="" class="nav-link">Inputs Groups</a></li>
+                            <li class=""><a href="" class="nav-link">Checkbox</a></li>
+                            <li class=""><a href="" class="nav-link">Radio</a></li>
+                            <li class=""><a href="" class="nav-link">Switch</a></li>
+                            <li class=""><a href="" class="nav-link">Mega option</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion  mt-1">
+                      <h2 class="accordion-header" id="heading6">
+                        <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6" style="color: grey;">
+                          <span class="col-lg-2"><i class="bi bi-bug-fill" style="color: grey;"></i></span>
+                          <span class="col-lg-6">Forms Plugins</span>
+                        </button>
+                      </h2>
+                      <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                        data-bs-parent="#accordionC">
+                        <div class="accordion-body">
+                          <ul class="dash">
+                            <div class="accordion accordion-flush" id="Date">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="fl1">
+                                  <li data-bs-toggle="collapse" data-bs-target="#f1" aria-expanded="false"
+                                    aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link">Date
+                                      <span>
+                                        <i class="bi bi-chevron-right mobile "
+                                          style="padding-left: 50px; color: crimson;"></i>
+                                      </span>
+                                    </a></li>
+                                </h2>
+                                <div id="f1" class="accordion-collapse collapse" aria-labelledby="fl1"
+                                  data-bs-parent="#Date">
+                                  <div class="accordion-body rode">
+                                    <ul class="dash m-0 p-0">
+                                      <li class=""><a href="" class="nav-link">Datepicker</a></li>
+                                      <li class=""><a href="" class="nav-link">Date Range Picker</a></li>
+                                      <li class=""><a href="" class="nav-link">Timepicker</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion accordion-flush" id="Select">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="fl2">
+                                  <li data-bs-toggle="collapse" data-bs-target="#f2" aria-expanded="false"
+                                    aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link">Select
+                                      <span>
+                                        <i class="bi bi-chevron-right mobile "
+                                          style="padding-left: 50px; color: crimson;"></i>
+                                      </span>
+                                    </a></li>
+                                </h2>
+                                <div id="f2" class="accordion-collapse collapse" aria-labelledby="fl2"
+                                  data-bs-parent="#Select">
+                                  <div class="accordion-body rode">
+                                    <ul class="dash m-0 p-0">
+                                      <li class=""><a href="" class="nav-link">Choices js</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <li class=""><a href="" class="nav-link">Rating</a></li>
+                            <li class=""><a href="" class="nav-link">Google reCaptcha</a></li>
+                            <li class=""><a href="" class="nav-link">Input Masks</a></li>
+                            <li class=""><a href="" class="nav-link">Clipboard</a></li>
+                            <li class=""><a href="" class="nav-link">Nouislider</a></li>
+                            <li class=""><a href="" class="nav-link">Bootstrap Switch</a></li>
+                            <li class=""><a href="" class="nav-link">Typeahead</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion  mt-1">
+                      <h2 class="accordion-header" id="heading7">
+                        <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7" style="color: grey;">
+                          <span class="col-lg-2"><i class="ri-text-snippet" style="color: grey;"></i></span>
+                          <span class="col-lg-6">Text Editors</span>
+                        </button>
+                      </h2>
+                      <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                        data-bs-parent="#accordionC">
+                        <div class="accordion-body">
+                          <ul class="dash">
+                            <li class=""><a href="" class="nav-link">Tinymce</a></li>
+                            <li class=""><a href="" class="nav-link">Quill</a></li>
+                            <div class="accordion accordion-flush" id=" editor">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="fl3">
+                                  <li data-bs-toggle="collapse" data-bs-target="#f3" aria-expanded="false"
+                                    aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link">CK editor
+                                      <span>
+                                        <i class="bi bi-chevron-right mobile "
+                                          style="padding-left: 50px; color: crimson;"></i>
+                                      </span>
+                                    </a></li>
+                                </h2>
+                                <div id="f3" class="accordion-collapse collapse" aria-labelledby="fl3"
+                                  data-bs-parent="#editor">
+                                  <div class="accordion-body rode">
+                                    <ul class="dash m-0 p-0">
+                                      <li class=""><a href="" class="nav-link">Classic</a></li>
+                                      <li class=""><a href="" class="nav-link">Document</a></li>
+                                      <li class=""><a href="" class="nav-link">Inline</a></li>
+                                      <li class=""><a href="" class="nav-link">Balloon</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <li class=""><a href="" class="nav-link">Markdown</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion  mt-1">
+                      <h2 class="accordion-header" id="heading8">
+                        <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8" style="color: grey;">
+                          <span class="col-lg-2"><i class="ri-align-item-horizontal-center-fill"
+                              style="color: grey;"></i></span>
+                          <span class="col-lg-6">Form Layouts</span>
+                        </button>
+                      </h2>
+                      <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+                        data-bs-parent="#accordionC">
+                        <div class="accordion-body">
+                          <ul class="dash">
+                            <li class=""><a href="" class="nav-link">Layouts</a></li>
+                            <li class=""><a href="" class="nav-link">Multicolumn</a></li>
+                            <li class=""><a href="" class="nav-link">Actionbars</a></li>
+                            <li class=""><a href="" class="nav-link"> Sticky Action bars</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion  mt-1">
+                      <h2 class="accordion-header" id="heading9">
+                        <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9" style="color: grey;">
+                          <span class="col-lg-2"><i class="ri-upload-cloud-fill" style="color: grey;"></i></span>
+                          <span class="col-lg-6">File Upload</span>
+                        </button>
+                      </h2>
+                      <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
+                        data-bs-parent="#accordionC">
+                        <div class="accordion-body">
+                          <ul class="dash">
+                            <li class=""><a href="" class="nav-link">Dropzone</a></li>
+                            <li class=""><a href="" class="nav-link">Uppy</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <ul>
+                    <li class="nav-item datas1">
+                      <a href="" class="nav-link datas">
+                        <span class="ps-1"><i class="bi bi-wallet-fill"></i></span>
+                        <span class="" style="padding-left: 12px;">Wizard</span>
+                      </a>
+                    </li>
+                    <li class="nav-item datas1">
+                      <a href="" class="nav-link datas">
+                        <span class="ps-1"><i class="ri-align-item-top-fill"></i></span>
+                        <span class="" style="padding-left: 12px;">Form Validation</span>
+                      </a>
+                    </li>
+                    <li class="nav-item datas1">
+                      <a href="" class="nav-link datas">
+                        <span class="ps-1"><i class="ri-planet-fill"></i></span>
+                        <span class="" style="padding-left: 12px;">Image cropper</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+    
+              </div>
+              <!-- Table -->
+              <div class="container">
+                <div class="row">
+                  <ul>
+                    <li><label class="caption">TABLE</label></li>
+                  </ul>
+                  <div class="accordion" id="accordionD">
+                    <div class="accordion  mt-1">
+                      <h2 class="accordion-header" id="heading10">
+                        <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10"
+                          style="color: grey;">
+                          <span class="col-lg-2"><i class="bi bi-list-task" style="color: grey;"></i></span>
+                          <span class="col-lg-6">Boostrap Table</span>
+                        </button>
+                      </h2>
+                      <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
+                        data-bs-parent="#accordionD">
+                        <div class="accordion-body">
+                          <ul class="dash">
+                            <li class=""><a href="" class="nav-link">Basic table</a></li>
+                            <li class=""><a href="" class="nav-link">Sizing table</a></li>
+                            <li class=""><a href="" class="nav-link">Border table</a></li>
+                            <li class=""><a href="" class="nav-link">Styling table</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="accordion  mt-1">
+                      <h2 class="accordion-header" id="heading11">
+                        <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11"
+                          style="color: grey;">
+                          <span class="col-lg-2"><i class="bi bi-chat-square-text-fill" style="color: grey;"></i></span>
+                          <span class="col-lg-6">Vanilla Table</span>
+                        </button>
+                      </h2>
+                      <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+                        data-bs-parent="#accordionD">
+                        <div class="accordion-body">
+                          <ul class="dash">
+                            <li class=""><a href="" class="nav-link">Basic initialization</a></li>
+                            <li class=""><a href="" class="nav-link">Dynamic Import</a></li>
+                            <li class=""><a href="" class="nav-link">Render Column Cells</a></li>
+                            <li class=""><a href="" class="nav-link">Column Manipulation</a></li>
+                            <li class=""><a href="" class="nav-link">Datetime Sorting</a></li>
+                            <li class=""><a href="" class="nav-link">Methods</a></li>
+                            <li class=""><a href="" class="nav-link">Add Rows</a></li>
+                            <li class=""><a href="" class="nav-link">Fetch API</a></li>
+                            <li class=""><a href="" class="nav-link">Filters</a></li>
+                            <li class=""><a href="" class="nav-link">Export</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion  mt-1">
+                      <h2 class="accordion-header" id="heading12">
+                        <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12"
+                          style="color: grey;">
+                          <span class="col-lg-2"><i class="ri-pie-chart-2-fill" style="color: grey;"></i></span>
+                          <span class="col-lg-6">Data Table</span>
+                        </button>
+                      </h2>
+                      <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12"
+                        data-bs-parent="#accordionD">
+                        <div class="accordion-body">
+                          <ul class="dash">
+                            <li class=""><a href="" class="nav-link">Advance initialization</a></li>
+                            <li class=""><a href="" class="nav-link">Styling</a></li>
+                            <li class=""><a href="" class="nav-link">API</a></li>
+                            <li class=""><a href="" class="nav-link">Plug-in</a></li>
+                            <li class=""><a href="" class="nav-link">Data sources</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion  mt-1">
+                      <h2 class="accordion-header" id="heading13">
+                        <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13"
+                          style="color: grey;">
+                          <span class="col-lg-2"><i class="bi bi-subtract" style="color: grey;"></i></span>
+                          <span class="col-lg-6">DT extensions</span>
+                        </button>
+                      </h2>
+                      <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13"
+                        data-bs-parent="#accordionD">
+                        <div class="accordion-body">
+                          <ul class="dash">
+                            <li class=""><a href="" class="nav-link">Autofill</a></li>
+                            <div class="accordion accordion-flush" id="button01">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="fl14">
+                                  <li data-bs-toggle="collapse" data-bs-target="#f14" aria-expanded="false"
+                                    aria-controls="flush-collapseOne" class="stump"><a href="" class="nav-link">Button
+                                      <span>
+                                        <i class="bi bi-chevron-right mobile "
+                                          style="padding-left: 50px; color: crimson;"></i>
+                                      </span>
+                                    </a></li>
+                                </h2>
+                                <div id="f14" class="accordion-collapse collapse" aria-labelledby="fl14"
+                                  data-bs-parent="#button01">
+                                  <div class="accordion-body rode">
+                                    <ul class="dash m-0 p-0">
+                                      <li class=""><a href="" class="nav-link">Basic button</a></li>
+                                      <li class=""><a href="" class="nav-link">Data export</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <li class=""><a href="" class="nav-link">Col reorder</a></li>
+                            <li class=""><a href="" class="nav-link">Fixed columns</a></li>
+                            <li class=""><a href="" class="nav-link">Fixed header</a></li>
+                            <li class=""><a href="" class="nav-link">Key table</a></li>
+                            <li class=""><a href="" class="nav-link">Responsive</a></li>
+                            <li class=""><a href="" class="nav-link">Row reorder</a></li>
+                            <li class=""><a href="" class="nav-link">Scroller</a></li>
+                            <li class=""><a href="" class="nav-link">Select table</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- CHARTS ∧ MAPS -->
+              <div class="container">
+                <div class="row">
+                  <ul>
+                    <li><label class="caption">CHARTS∧MAPS</label></li>
+                  </ul>
+                  <div class="accordion" id="accordionH">
+                    <div class="accordion  mt-1">
+                      <h2 class="accordion-header" id="heading15">
+                        <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15"
+                          style="color: grey;">
+                          <span class="col-lg-2"><i class="ri-pie-chart-2-fill" style="color: grey;"></i></span>
+                          <span class="col-lg-6">Charts</span>
+                        </button>
+                      </h2>
+                      <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15"
+                        data-bs-parent="#accordionH">
+                        <div class="accordion-body">
+                          <ul class="dash">
+                            <li class=""><a href="" class="nav-link">Apex Chart</a></li>
+                            <li class=""><a href="" class="nav-link">Peity Chart</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion  mt-1">
+                      <h2 class="accordion-header" id="heading16">
+                        <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16"
+                          style="color: grey;">
+                          <span class="col-lg-2"><i class="ri-triangle-fill" style="color: grey;"></i></span>
+                          <span class="col-lg-6">Maps</span>
+                        </button>
+                      </h2>
+                      <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16"
+                        data-bs-parent="#accordionH">
+                        <div class="accordion-body">
+                          <ul class="dash">
+                            <li class=""><a href="" class="nav-link">Vector Maps</a></li>
+                            <li class=""><a href="" class="nav-link">Gmaps</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- APPLICATION -->
+              <div class="container">
+                <div class="row">
+                  <ul>
+                    <li><label class="caption">APPLICATION</label></li>
+                  </ul>
+                  <ul>
+                    <li class="nav-item datas1">
+                      <a href="" class="nav-link datas">
+                        <span class="ps-2"><i class="bi bi-calendar2-event-fill"></i></span>
+                        <span class="ps-2">Calender</span>
+                      </a>
+                    </li>
+                    <li class="nav-item datas1">
+                      <a href="" class="nav-link datas">
+                        <span class="ps-2"><i class="bi bi-chat-right-text-fill"></i></span>
+                        <span class="ps-2">Chat</span>
+                      </a>
+                    </li>
+                    <li class="nav-item datas1">
+                      <a href="" class="nav-link datas">
+                        <span class="ps-2"><i class="bi bi-file-earmark-break-fill"></i></span>
+                        <span class="ps-2">Customer</span>
+                      </a>
+                    </li>
+                    <div class="accordion  " id="accordionJ">
+                      <div class="accordion hub mt-0">
+                        <h2 class="accordion-header " id="heading18">
+                          <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapseTwo"
+                            style="color: grey;">
+                            <span class="col-lg-2 ps-1"><i class="ri-lock-2-fill" style="color: grey;"></i></span>
+                            <span class="col-lg-6">E-commerce</span>
+                          </button>
+                        </h2>
+                        <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18"
+                          data-bs-parent="#accordionJ">
+                          <div class="accordion-body">
+                            <ul class="dash">
+                              <li class=""><a href="" class="nav-link">Product</a></li>
+                              <li class=""><a href="" class="nav-link">Product Details</a></li>
+                              <li class=""><a href="" class="nav-link">Product list</a></li>
+                              <li class=""><a href="" class="nav-link">Add New Product</a></li>
+                              <li class=""><a href="" class="nav-link">Checkout</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <li class="nav-item datas1">
+                      <a href="" class="nav-link datas">
+                        <span class="ps-2"><i class="bi bi-file-image-fill"></i></span>
+                        <span class="ps-2">File manager</span>
+                      </a>
+                    </li>
+                    <li class="nav-item datas1">
+                      <a href="" class="nav-link datas">
+                        <span class="ps-2"><i class="bi bi-envelope-at-fill"></i></span>
+                        <span class="ps-2">Mail</span>
+                      </a>
+                    </li>
+                    <div class="accordion  " id="accordionK">
+                      <div class="accordion hub mt-0">
+                        <h2 class="accordion-header " id="heading19">
+                          <button class="accordion-button collapsed box6" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapseTwo"
+                            style="color: grey;">
+                            <span class="col-lg-2 ps-1"><i class="bi bi-person-square" style="color: grey;"></i></span>
+                            <span class="col-lg-6">Users</span>
+                          </button>
+                        </h2>
+                        <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="heading19"
+                          data-bs-parent="#accordionK">
+                          <div class="accordion-body">
+                            <ul class="dash">
+                              <li class=""><a href="" class="nav-link">Account Profile</a></li>
+                              <li class=""><a href="" class="nav-link">Social Media</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Notifications</h5>
+                <a href="#">Mark all read</a>
+              </div>
+              <div class="modal-body">
+                <div class="simplebar" style="padding: 16px 20px;">
+                  <p class="text-span">Today</p>
+
+                  <!-- card1 -->
+                  <div class="card mb-2">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0">
+                            <i class="bi bi-stack" style="color: blueviolet;"></i>
+                          </div>
+                          <div class="flex-grow-1 ms-3">
+                            <span class="float-end text-sm text-muted">2 min ago</span>
+                            <h5 class="text-body mb-2">UI/UX Design</h5>
+                            <p class="mb-0">Lorem Ipsum has been the industry's standard dummy text ever since the
+                              1500s, when an unknown printer took a galley of type and scrambled it to make a type</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card2 -->
+                  <div class="card mb-2">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0">
+                            <i class="bi bi-chat-dots-fill" style="color: blueviolet;"></i>
+                          </div>
+                          <div class="flex-grow-1 ms-3">
+                            <span class="float-end text-sm text-muted">1 hour ago</span>
+                            <h5 class="text-body mb-2">Message</h5>
+                            <p class="mb-0">Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-span">Yesterday</p>
+                  <!-- card3 -->
+                  <div class="card mb-2">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0">
+                            <i class="bi bi-file-earmark-fill" style="color: blueviolet;"></i>
+                          </div>
+                          <div class="flex-grow-1 ms-3">
+                            <span class="float-end text-sm text-muted">2 hour ago</span>
+                            <h5 class="text-body mb-2">Forms</h5>
+                            <p class="mb-0">Lorem Ipsum has been the industry's standard dummy text ever since the
+                              1500s, when an unknown printer took a galley of type and scrambled it to make a type</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card4 -->
+                  <div class="card mb-2">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0">
+                            <i class="bi bi-shield-fill-check" style="color: blueviolet;"></i>
+                          </div>
+                          <div class="flex-grow-1 ms-3">
+                            <span class="float-end text-sm text-muted">5 hour ago</span>
+                            <h5 class="text-body mb-2">Security</h5>
+                            <p class="mb-0">Lorem Ipsum has been the industry's standard dummy text ever since the
+                              1500s, when an unknown printer took a galley of type and scrambled it to make a type</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main content -->
+        <div class="container">
+          <div class="content">
+            <div class="row">
+              <div class="col-12">
+                <div class="card welcome-banner ">
+                  <div class="card-body bg-primary prime ">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="p-4">
+                          <h2 class="text-white jordan ">Explore Redesigned Able Pro</h2>
+                          <p class="text-white pt-2 jordan1">The Brand new User Interface with power of Bootstrap
+                            Components. <br> Explore the Endless possibilities with Able Pro.</p>
+                          <a href="#" class="btn btn-outline-light rounded-pill ps-3 pe-3">Exclusive on Themeforest</a>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 text-center">
+                        <div class="img-welcome-banner">
+                          <img src="images/welcome-banner.png" alt="img" class="img-fluid ">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row flex-wrap g-4 mt-2">
+              <!-- chart1 -->
+              <div class="col-lg-6 cbox-1">
+                <div class="cbox-3">
+                  <div class="cbox-2 p-4">
+                    <div class="cbox3">
+                      <h6 id="th-1"><i class="ri-wallet-2-line" id="i-th-1"></i>&nbsp;&nbsp;All
+                        Earnings</h6>
+                      <div class="dropdown">
+                        <a class="text-decoration-none i-th-2" href="" id="dropdownMenuLink" data-bs-toggle="dropdown">
+                          <i class="ri-more-2-line"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                          <li class="ps-2 pe-2"><a class="dropdown-item p-0 ps-3  pt-2 pb-2 " href="#">Today</a></li>
+                          <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2  " href="#">Weekly</a></li>
+                          <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2" href="#">Monthly</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-body ps-5 pe-5 mb-3">
+                    <div class="row rounded" id="chart-1">
+                      <div class="col-lg-7 p-4 col-sm-7 col-md-12 col-12">
+                        <div class=" cl-7 mt-4 w-100 ">
+                          <canvas id="myChart"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-lg-5 p-4 ps-0  col-sm-5 col-md-12">
+                        <div class=" cl-7 mt-5">
+                          <h5>$3,020</h5>
+                          <h6 id="clr-5"><i class="ri-arrow-right-up-line"></i> 30.6%</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- chart2 -->
+              <div class="col-lg-6 col-12 col-sm-12 col-md-12 cbox-1">
+                <div class="cbox-3">
+                  <div class="cbox-2 p-4">
+                    <div class="cbox3">
+                      <h6 id="th-1"><i class="ri-file-transfer-line text-warning"
+                        id="i-th-2"></i>&nbsp;&nbsp;Page Views</h6>
+                      <div class="dropdown">
+                        <a class="text-decoration-none i-th-2" href="" id="dropdownMenuLink" data-bs-toggle="dropdown">
+                          <i class="ri-more-2-line"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                          <li class="ps-2 pe-2"><a class="dropdown-item p-0 ps-3  pt-2 pb-2 " href="#">Today</a></li>
+                          <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2  " href="#">Weekly</a></li>
+                          <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2" href="#">Monthly</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-body ps-5 pe-5 mb-3">
+                    <div class="row rounded" id="chart-1">
+                      <div class="col-lg-7 p-4 col-sm-7 col-md-12 col-12">
+                        <div class=" cl-7 mt-4 w-100 ">
+                          <canvas id="myChart1"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-lg-5 p-4 ps-0  col-sm-5 col-md-12">
+                        <div class=" cl-7 mt-5 ">
+                          <h5>$290K+</h5>
+                          <h6 id="clr-5"><i class="ri-arrow-right-up-line"></i> 30.6%</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- chart3 -->
+              <div class="col-lg-6 col-12 col-sm-12 col-md-12 cbox-1">
+                <div class="cbox-3">
+                  <div class="cbox-2 p-4">
+                    <div class="cbox3">
+                      <h6 id="th-1"><i class="ri-calendar-2-fill" id="i-th-3"></i>&nbsp;&nbsp;Total Task</h6>
+                      <div class="dropdown">
+                        <a class="text-decoration-none i-th-2" href="" id="dropdownMenuLink" data-bs-toggle="dropdown">
+                          <i class="ri-more-2-line"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                          <li class="ps-2 pe-2"><a class="dropdown-item p-0 ps-3  pt-2 pb-2 " href="#">Today</a></li>
+                          <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2  " href="#">Weekly</a></li>
+                          <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2" href="#">Monthly</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-body ps-5 pe-5 mb-3">
+                    <div class="row rounded" id="chart-1">
+                      <div class="col-lg-7 p-4 col-sm-7 col-md-12 col-12">
+                        <div class=" cl-7 mt-4 w-100 ">
+                          <canvas id="myChart2"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-lg-5 p-4 ps-0  col-sm-5 col-md-12">
+                        <div class=" cl-7 mt-5 ">
+                          <h5>839</h5>
+                          <h6 id="clr-5"><i class="ri-arrow-right-up-line"></i> New</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- chart4 -->
+              <div class="col-lg-6 col-12 col-sm-12 col-md-12 cbox-1">
+                <div class="cbox-3">
+                  <div class="cbox-2 p-4">
+                    <div class="cbox3">
+                      <h6 id="th-1"><i class="ri-time-line" id="i-th-4"></i>&nbsp;&nbsp;Download</h6>
+                      <div class="dropdown">
+                        <a class="text-decoration-none i-th-2" href="" id="dropdownMenuLink" data-bs-toggle="dropdown">
+                          <i class="ri-more-2-line"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                          <li class="ps-2 pe-2"><a class="dropdown-item p-0 ps-3  pt-2 pb-2 " href="#">Today</a></li>
+                          <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2  " href="#">Weekly</a></li>
+                          <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2" href="#">Monthly</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-body ps-5 pe-5 mb-3">
+                    <div class="row rounded" id="chart-1">
+                      <div class="col-lg-7 p-4 col-sm-7 col-md-12 col-12">
+                        <div class=" cl-7 mt-4 w-100 ">
+                          <canvas id="myChart3"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-lg-5 p-4 ps-0  col-sm-5 col-md-12">
+                        <div class=" cl-7 mt-5 ">
+                          <h5>2,067</h5>
+                          <h6 id="clr-5"><i class="ri-arrow-right-up-line"></i> 30.6%</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- second chart -->
+        <div class="container mt-5" id="c-13">
+          <div class="row">
+              <div class="col-lg-9 col-sm-12 col-md-12 col-12 mb-2 ">
+                  <div class="cbox-3">
+                      <div class="cbox-2 p-4">
+                          <div class="cbox3">
+                              <h6 id="th-1">Repeat customer rate</h6>
+                              <div class="dropdown">
+                                  <a class="text-decoration-none i-th-2" href="" id="dropdownMenuLink"
+                                      data-bs-toggle="dropdown">
+                                      <i class="ri-more-line"></i>
+                                  </a>
+                                  <ul class="dropdown-menu dropdown-menu-end"
+                                      aria-labelledby="dropdownMenuButton1">
+                                      <li class="ps-2 pe-2"><a class="dropdown-item p-0 ps-3  pt-2 pb-2 "
+                                              href="#">Today</a></li>
+                                      <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2  "
+                                              href="#">Weekly</a></li>
+                                      <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2"
+                                              href="#">Monthly</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="cbox-4 float-end ">
+                              <h5>5.44%&nbsp;<span
+                                      style="background-color: #2ca87f; padding: 5px 10px; border-radius: 5px; color: white;">+2.6%</span>
+                              </h5>
+                          </div>
+                          <div class=" cl-7 mt-4 w-100 ">
+                              <canvas id="myChart5"></canvas>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-sm-12 col-md-12 col-12 ">
+                  <div class="cbox-3">
+                      <div class="txt-1 p-3 pb-3">
+                          <h6>Project - Able Pro</h6>
+                      </div>
+                      <div class="cbox-1 p-4 ">
+                          <div class="txt-2 d-flex justify-content-between ">
+                              <p class="text-secondary ">Release v1.2.0</p>
+                              <p class="text-secondary ">70%</p>
+                          </div>
+                          <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 70%;"
+                                  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="txt-li-1 mt-4 ">
+                              <a href="" id="Que1"><i class="ri-circle-fill text-warning"
+                                      id="cosmoce"></i>&nbsp;&nbsp;Horizontal Layput</a>
+                          </div>
+                          <div class="txt-li-1 mt-2">
+                              <a href="" id="Que1"><i class="ri-circle-fill text-warning"
+                                      id="cosmoce"></i>&nbsp;&nbsp;invoice Generator</a>
+                          </div>
+                          <div class="txt-li-1 mt-2">
+                              <a href="" id="Que1"><i class="ri-circle-fill text-warning"
+                                      id="cosmoce"></i>&nbsp;&nbsp;Packege Upgrades</a>
+                          </div>
+                          <div class="txt-li-1 mt-2">
+                              <a href="" id="Que1"><i class="ri-circle-fill" id="Para10"></i>&nbsp;&nbsp;Figma
+                                  and Layout</a>
+                          </div>
+                          <div class="txt-li-1 mt-2 mb-4">
+                              <a href="" id="Que2"><i class="ri-add-line text-white "></i>&nbsp;&nbsp;Add
+                                  task</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Project -->
+      <div class="container mt-3 " id="c-13">
+        <div class="row">
+            <div class="col-lg-9 col-sm-12 col-md-12 col-12 mb-2 ">
+                <div class="cbox-3">
+                    <div class="cbox-2 p-4">
+                        <div class="cbox3">
+                            <h6 id="th-1">Project overview</h6>
+                            <div class="dropdown">
+                                <a class="text-decoration-none i-th-2" href="" id="dropdownMenuLink"
+                                    data-bs-toggle="dropdown">
+                                    <i class="ri-more-line"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end"
+                                    aria-labelledby="dropdownMenuButton1">
+                                    <li class="ps-2 pe-2"><a class="dropdown-item p-0 ps-3  pt-2 pb-2 "
+                                            href="#">Today</a></li>
+                                    <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2  "
+                                            href="#">Weekly</a></li>
+                                    <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2"
+                                            href="#">Monthly</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mt-4 ">
+
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                                <h6 class="text-secondary ">Total Tasks</h6>
+                                <h5>34,686</h5>
+                            </div>
+                            <div class="col-lg-2 col-sm-6 col-md-6 col-sm-6 col-6 ">
+                                <img src="images/sc--1.png" class="w-100 " alt="">
+                            </div>
+                            <div class="col-lg-2 col-sm-6 col-md-6 col-6">
+                                <h6 class="text-secondary ">Pending Tasks</h6>
+                                <h5>3,786</h5>
+                            </div>
+                            <div class="col-lg-2 col-sm-6 col-md-6 col-6">
+                                <img src="images/sc-2.png" class="w-100 " alt="">
+                            </div>
+                            <div class="col-lg-4 col-sm-12 col-md-12 m-auto ">
+                                <div class="txt-li-1 mt-2 mb-4">
+                                    <a href="" id="Que3"><i
+                                            class="ri-add-line text-white "></i>&nbsp;&nbsp;Add task</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-md-12 col-12 ">
+                <div class="cbox-3">
+                    <div class="cbox-2 p-4 ">
+                        <div class="ma-1 d-flex justify-content-evenly ">
+                            <div class="ii-1">
+                                <i class="ri-at-line p-2" id="ii-2"></i>
+                            </div>
+                            <div class="tx-1">
+                                <h6 class="p-0 m-0 ">Able Pro</h6>
+                                <p style="font-size: 12px; color: grey;">@ableprodevelop</p>
+                            </div>
+                            <div class="ii-2">
+                                <div class="dropdown">
+                                    <a class="text-decoration-none i-th-9" href="" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown">
+                                        <i class="ri-more-2-line text-secondary "></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end"
+                                        aria-labelledby="dropdownMenuButton1">
+                                        <li class="ps-2 pe-2"><a class="dropdown-item p-0 ps-3  pt-2 pb-2 "
+                                                href="#">Today</a></li>
+                                        <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2  "
+                                                href="#">Weekly</a></li>
+                                        <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2"
+                                                href="#">Monthly</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imgesss-1 d-flex justify-content-between mt-4 ">
+                            <div class="img-25 position-relative ">
+                                <img src="images/avatar-1.jpg" class="bi-10 rounded-circle " alt="">
+                                <img src="images/avatar-2.jpg" class="bi-11 rounded-circle " alt="">
+                                <img src="images/avatar-1.jpg" alt="" class="bi-12 rounded-circle ">
+                                <img src="images/avatar-2.jpg" alt="" class="bi-13 rounded-circle ">
+                                <img src="images/avatar-1.jpg" alt="" class="bi-14 rounded-circle ">
+                            </div>
+                            <a href="" id="i-20"><i class="ri-add-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Transaction -->
+    <div class="container " id="c-13">
+      <div class="row">
+          <div class="col-lg-6 col-sm-12 col-md-6 col-12">
+              <div class="cbox-3">
+                  <div class="cbox-2 p-4 ">
+                      <div class="b-1 d-flex justify-content-between ">
+                          <h6>Transaction</h6>
+                          <div class="dropdown">
+                              <a class="text-decoration-none i-th-10" href="" id="dropdownMenuLink"
+                                  data-bs-toggle="dropdown">
+                                  <i class="ri-more-2-line text-secondary "></i>
+                              </a>
+                              <ul class="dropdown-menu dropdown-menu-end"
+                                  aria-labelledby="dropdownMenuButton1">
+                                  <li class="ps-2 pe-2"><a class="dropdown-item p-0 ps-3  pt-2 pb-2 "
+                                          href="#">Today</a></li>
+                                  <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2  "
+                                          href="#">Weekly</a></li>
+                                  <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2"
+                                          href="#">Monthly</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="bo-1">
+                      <ul class="bar-2 d-flex m-0">
+                          <li class=""><a href="">All Transaction</a></li>
+                          <li><a href="">Success</a></li>
+                          <li><a href="">Pending</a></li>
+                      </ul>
+                  </div>
+                  <div class="boxs-1">
+                      <ul class="p-0 ">
+                          <li class="list-unstyled bearson1 pt-3 ps-3 pe-3   ">
+                              <div class="boxz-1 d-flex justify-content-between ">
+                                  <div class="ai">
+                                      <h5 class="boxz-3">AI</h5>
+                                  </div>
+                                  <div class="flex-grow-1 ">
+                                      <div class="row ms-3 ">
+                                          <div class="col-6">
+                                              <div class="txz-1">
+                                                  <h6 class="p-0 m-0">Apple Inc.</h6>
+                                                  <p class="text-secondary">#ABLE-PRO-T00232</p>
+                                              </div>
+                                          </div>
+                                          <div class="col-6">
+                                              <div class="float-end ">
+                                                  <h6 class="m-0 ">$210,000</h6>
+                                                  <p class="text-danger "><i
+                                                          class="ri-arrow-left-down-line"></i>10.6%</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="list-unstyled bearson2 pt-3 ps-3 pe-3   ">
+                              <div class="boxz-1 d-flex justify-content-between ">
+                                  <div class="ai">
+                                      <h5 class="boxz-3">SM</h5>
+                                  </div>
+                                  <div class="flex-grow-1 ">
+                                      <div class="row ms-3 ">
+                                          <div class="col-6">
+                                              <div class="txz-1">
+                                                  <h6 class="p-0 m-0">Spotify Music</h6>
+                                                  <p class="text-secondary">#ABLE-PRO-T00232</p>
+                                              </div>
+                                          </div>
+                                          <div class="col-6">
+                                              <div class="float-end ">
+                                                  <h6 class="m-0 ">-10,000</h6>
+                                                  <p class="text-success  "><i
+                                                          class="ri-arrow-right-up-line"></i>30.6%</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="list-unstyled bearson3 pt-3 ps-3 pe-3   ">
+                              <div class="boxz-1 d-flex justify-content-between ">
+                                  <div class="ai">
+                                      <h5 class="boxz-4">MD</h5>
+                                  </div>
+                                  <div class="flex-grow-1 ">
+                                      <div class="row ms-3 ">
+                                          <div class="col-6">
+                                              <div class="txz-1">
+                                                  <h6 class="p-0 m-0">Medium</h6>
+                                                  <p class="text-secondary">06:30 pm</p>
+                                              </div>
+                                          </div>
+                                          <div class="col-6">
+                                              <div class="float-end ">
+                                                  <h6 class="m-0 ">-26</h6>
+                                                  <p class="text-warning"><i
+                                                          class="ri-arrow-left-right-line"></i>5%</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="list-unstyled bearson4 pt-3 ps-3 pe-3   ">
+                              <div class="boxz-1 d-flex justify-content-between ">
+                                  <div class="ai">
+                                      <h5 class="boxz-3">U</h5>
+                                  </div>
+                                  <div class="flex-grow-1 ">
+                                      <div class="row ms-3 ">
+                                          <div class="col-6">
+                                              <div class="txz-1">
+                                                  <h6 class="p-0 m-0">Uber</h6>
+                                                  <p class="text-secondary">08:40 pm</p>
+                                              </div>
+                                          </div>
+                                          <div class="col-6">
+                                              <div class="float-end ">
+                                                  <h6 class="m-0 ">+210,000</h6>
+                                                  <p class="text-success  "><i
+                                                          class="ri-arrow-right-up-line"></i>30.6%</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="list-unstyled bearson5 pt-3 ps-3 pe-3   ">
+                              <div class="boxz-1 d-flex justify-content-between ">
+                                  <div class="ai">
+                                      <h5 class="boxz-5 text-warning ">OC</h5>
+                                  </div>
+                                  <div class="flex-grow-1 ">
+                                      <div class="row ms-3 ">
+                                          <div class="col-6">
+                                              <div class="txz-1">
+                                                  <h6 class="p-0 m-0">Ola Cabs</h6>
+                                                  <p class="text-secondary">07:40 pm</p>
+                                              </div>
+                                          </div>
+                                          <div class="col-6">
+                                              <div class="float-end ">
+                                                  <h6 class="m-0 ">+210,000</h6>
+                                                  <p class="text-success  "><i
+                                                          class="ri-arrow-right-up-line"></i>10.6%</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="cbox-2 p-4 ">
+                      <div class="row g-3">
+                          <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                              <a href="" class="text-decoration-none p-2  rounded-pill  a-1">View all
+                                  Transaction Hist..</a>
+                          </div>
+                          <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                              <a href=""
+                                  class="text-decoration-none pt-2 pb-2 ps-3 pe-3  rounded-pill  a-2">Create
+                                  new Transaction</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 col-md-6 col-12">
+              <div class="cbox-3">
+                  <div class="cbox-2 p-4 ">
+                      <div class="b-1 d-flex justify-content-between ">
+                          <h6>Transaction</h6>
+                          <div class="dropdown">
+                              <a class="text-decoration-none i-th-10" href="" id="dropdownMenuLink"
+                                  data-bs-toggle="dropdown">
+                                  <i class="ri-more-2-line text-secondary "></i>
+                              </a>
+                              <ul class="dropdown-menu dropdown-menu-end"
+                                  aria-labelledby="dropdownMenuButton1">
+                                  <li class="ps-2 pe-2"><a class="dropdown-item p-0 ps-3  pt-2 pb-2 "
+                                          href="#">Today</a></li>
+                                  <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2  "
+                                          href="#">Weekly</a></li>
+                                  <li class="ps-2 pe-2"><a class="dropdown-item p-0 pt-2 ps-3  pb-2"
+                                          href="#">Monthly</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class=" cl-7 mt-4 w-75 m-auto  ">
+                          <canvas id="myChart6"></canvas>
+                      </div>
+                  </div>
+                  <div class="ro-5">
+                      <div class="row">
+                          <div class="col-6">
+                              <div class="cbox-2 ps-4 pe-0 pt-4 pb-4">
+                                  <div class="boi-1 p-2">
+                                      <ul class="m-0 ">
+                                          <li class="text-primary"><span
+                                                  style="color: grey; font-size: 14px;">Income</span></li>
+                                      </ul>
+                                      <h6 class="ps-4 ">$23,876 <span><i class="ri-arrow-up-double-fill"
+                                                  style="font-size: 12px;"></i>+$763,43</span></h6>
+                                  </div>
+                              </div>
+
+                          </div>
+                          <div class="col-6">
+                              <div class="cbox-2 pt-4 pe-4 pb-4 ps-0">
+                                  <div class="boi-1 p-2">
+                                      <ul class="m-0 ">
+                                          <li class="text-warning "><span
+                                                  style="color: grey; font-size: 14px;">Rent</span></li>
+                                      </ul>
+                                      <h6 class="ps-4 ">$23,876 <span><i class="ri-arrow-up-double-fill"
+                                                  style="font-size: 12px;"></i>+$763,43</span></h6>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="cbox-2 pt-0 pe-0 pb-2 ps-4">
+                                  <div class="boi-1 p-2">
+                                      <ul class="m-0 ">
+                                          <li class="text-success "><span
+                                                  style="color: grey; font-size: 14px;">Download</span>
+                                          </li>
+                                      </ul>
+                                      <h6 class="ps-4 ">$23,876 <span><i class="ri-arrow-up-double-fill"
+                                                  style="font-size: 12px;"></i>+$763,43</span></h6>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-6">
+                              <div class="cbox-2 pt-0 pe-4 pb-2 ps-0 ">
+                                  <div class="boi-1 p-2">
+                                      <ul class="m-0 ">
+                                          <li class="text-light "><span
+                                                  style="color: grey; font-size: 14px;">View</span></li>
+                                      </ul>
+                                      <h6 class="ps-4 ">$23,876 <span><i class="ri-arrow-up-double-fill"
+                                                  style="font-size: 12px;"></i>+$763,43</span></h6>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- footer -->
+  <div class="container mt-3" id="c-13">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="cbox-2">
+                <p>Able Pro ♥ crafted by Team <span class="ftt">Phoenixcoded</span></p>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="cbox-2">
+                <div class="ft-1 float-end ">
+                    <a href="" class="text-decoration-none ps-2 pe-2  ">Home</a>
+                    <a href="" class="text-decoration-none ps-2 pe-2  ">Documentation</a>
+                    <a href="" class="text-decoration-none  ps-2 pe-2 ">Support</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modal2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title p-1">Profile</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="simplebar1 p-1">
+              <div class="d-flex mb-1">
+                <div class="flex-shrink-0">
+                  <img src="images/avatar-1.jpg" alt="user-image" class="user-avtar wid-35">
+                </div>
+                <div class="flex-grow-1 ms-3">
+                  <h6 class="mb-1">Carson Darrin 🖖</h6>
+                  <span>carson.darrin@company.io</span>
+                </div>
+              </div>
+              <hr class="border-secondary border-opacity-50">
+              <div class="card cardp1">
+                <div class="card-body py-3">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="mb-0 d-inline-flex align-items-center">
+                      <i class="bi bi-bell"></i>&nbsp;&nbsp;&nbsp;
+                      Notification
+                    </h5>
+                    <div class="form-check form-switch form-check-reverse m-0">
+                      <input class="form-check-input f-18" type="checkbox" role="switch">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="text-span">Manage</p>
+              <a href="#" class="dropdown-item">
+                <span>
+                  <i class="bi bi-nut"></i>&nbsp;&nbsp;&nbsp;
+                  <span>Settings</span>
+                </span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <span>
+                  <i class="bi bi-ubuntu"></i>&nbsp;&nbsp;&nbsp;
+                  <span>Share</span>
+                </span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <span>
+                  <i class="ri-lock-2-line"></i>&nbsp;&nbsp;&nbsp;
+                  <span>Change Password</span>
+                </span>
+              </a>
+              <hr class="border-secondary border-opacity-50">
+              <p class="text-span">Team</p>
+              <a href="#" class="dropdown-item d-flex justify-content-between">
+                <div class="flexp1">
+                  <i class="bi bi-people"></i>&nbsp;&nbsp;
+                  <span>UI Design team</span>
+                </div>
+                <span class="user-group">
+                  <img src="images/avatar-1.jpg" alt="user-image" class="avtar">
+                  <img src="images/avatar-2.jpg" alt="user-image" class="avtar">
+                  <img src="images/avatar-1.jpg" alt="user-image" class="avtar">
+                  <img src="images/avatar-2.jpg" alt="user-image" class="avtar">
+                </span>
+              </a>
+              <a href="#" class="dropdown-item d-flex justify-content-between">
+                <div class="flexp1">
+                  <i class="bi bi-people"></i>&nbsp;&nbsp;
+                  <span>Friends Groups</span>
+                </div>
+                <span class="user-group">
+                  <img src="images/avatar-1.jpg" alt="user-image" class="avtar">
+                  <img src="images/avatar-2.jpg" alt="user-image" class="avtar">
+                  <img src="images/avatar-1.jpg" alt="user-image" class="avtar">
+                </span>
+              </a>
+              <a href="#" class="dropdown-item d-flex justify-content-between">
+                <div class="flexp1">
+                  <span>+</span>&nbsp;&nbsp;
+                  <span>Add new</span>
+                </div>
+                <span class="user-group">
+                  <img src="images/Screenshot 2024-05-29 221338.png" alt="user-image" class="avtar">
+                </span>
+              </a>
+              <hr class="border-secondary border-opacity-50">
+              <div class="d-grid mb-3">
+                <button class="btn btn-primary">
+                  <i class="bi bi-arrow-return-right"></i>&nbsp;&nbsp;&nbsp;Logout</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- chart1 -->
+  <script>
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+
+        labels: ['', '', '', '', '', '', '', '', '', '', ''],
+        datasets: [{
+          label: '',
+          data: [12, 19, 10, 20, 12, 13, 12, 18, 19, 20, 12,],
+          backgroundColor: [
+            '#4680ff',
+            '#4680ff',
+            '#4680ff',
+            '#4680ff',
+            '#4680ff',
+            '#4680ff',
+            '#4680ff'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+  <!-- chart2 -->
+  <script>
+    const ctx1 = document.getElementById('myChart1');
+
+    new Chart(ctx1, {
+      type: 'bar',
+      data: {
+
+        labels: ['', '', '', '', '', '', '', '', '', '', ''],
+        datasets: [{
+          label: '',
+          data: [12, 19, 10, 20, 12, 13, 12, 18, 19, 20, 12,],
+          backgroundColor: [
+            'red',
+            'red',
+            'red',
+            'red',
+            'red',
+            'red',
+            'red'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+  <!-- chart3 -->
+  <script>
+    const ctx2 = document.getElementById('myChart2');
+
+    new Chart(ctx2, {
+      type: 'bar',
+      data: {
+
+        labels: ['', '', '', '', '', '', '', '', '', '', ''],
+        datasets: [{
+          label: '',
+          data: [12, 19, 10, 20, 12, 13, 12, 18, 19, 20, 12,],
+          backgroundColor: [
+            'orange',
+            'orange',
+            'orange',
+            'orange',
+            'orange',
+            'orange',
+            'orange'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+  <!-- chart4 -->
+  <script>
+    const ctx3 = document.getElementById('myChart3');
+
+    new Chart(ctx3, {
+      type: 'bar',
+      data: {
+
+        labels: ['', '', '', '', '', '', '', '', '', '', ''],
+        datasets: [{
+          label: '',
+          data: [12, 19, 10, 20, 12, 13, 12, 18, 19, 20, 12,],
+          backgroundColor: [
+            'blue',
+            'blue',
+            'blue',
+            'blue',
+            'blue',
+            'blue',
+            'blue'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+<!-- second line chart -->
+<script>
+  const ctx4 = document.getElementById('myChart5');
+
+  new Chart(ctx4, {
+      type: 'line',
+      data: {
+
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+          datasets: [{
+              label: '',
+              data: [30, 60, 40, 70, 50, 70, 50, 55, 45, 60, 50, 65],
+              backgroundColor: [
+                  'blue',
+                  'blue',
+                  'blue',
+                  'blue',
+                  'blue',
+                  'blue',
+                  'blue'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
+      }
+  });
+</script>
+ <!-- doughnut -->
+ <script>
+  const ctx5 = document.getElementById('myChart6');
+
+  new Chart(ctx5, {
+      type: 'doughnut',
+      data: {
+
+          labels: ['view', 'Total income', 'Total rent', 'Download',],
+          datasets: [{
+              label: '',
+              data: [17, 27, 23, 20,],
+              backgroundColor: [
+                  'rgb(70, 128, 255, 0.3)',
+                  '#1952fd',
+                  'orange',
+                  'green',
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
+      }
+  });
+</script>
+  <script>
+    $(document).ready(function () {
+      $(".symbol").click(function () {
+        $(".left").fadeToggle();
+      }),
+        $(".counter").click(function () {
+          $(".flex5").fadeToggle();
+        }),
+        $(".mobile").click(function () {
+          $(".cats").fadeToggle();
+        })
+    })
+  </script>
+
+</body>
+
+</html>
